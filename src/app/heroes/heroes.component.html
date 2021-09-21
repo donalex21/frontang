@@ -9,3 +9,9 @@
    <label for="name">Hero name:</label>
    <input id="name" [(ngModel)]="hero.name" placeholder="name">
 </div>
+<h2>My Heroes</h2>
+<ul class="heroes">
+   <li *ngFor="let person of heroes">
+      <span class="badge">{{person.id}}</span>{{person.name}}
+   </li>
+</ul>
