@@ -10,7 +10,7 @@ export class HeroService {
 
   constructor() { }
 
-  getHeroes: Observable<Hero[]> {
+  getHeroes(): Observable<Hero[]> {
     const heroes = of(HEROES);
     return heroes;
   }
